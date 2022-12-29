@@ -1,0 +1,20 @@
+.contactUser {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.contactUser button {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 2px 5px rgb(100, 100, 100);
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.user {
+  margin: 0;
+}

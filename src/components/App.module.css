@@ -1,0 +1,40 @@
+.phonebook {
+  max-width: 500px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  background-color: lightgray;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+/* .form {
+  display: inline-flex;
+  gap: 5px;
+  flex-wrap: wrap;
+} */
+
+/* .inputField,
+.button {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 2px 5px rgb(100, 100, 100);
+} */
+
+/* .inputField:not(:last-child) {
+  margin-left: 10px;
+} */
+
+/* .button {
+  background-color: aliceblue;
+  cursor: pointer;
+} */

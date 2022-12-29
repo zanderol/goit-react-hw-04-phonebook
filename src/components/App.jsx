@@ -5,6 +5,8 @@ import Form from './Form/Form';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 
+import css from './App.module.css';
+
 class App extends Component {
   state = {
     contacts: [
@@ -56,15 +58,18 @@ class App extends Component {
   render() {
     const visibleContacts = this.getVisibleContacts();
     return (
-      <section className="">
-        <h1>PhoneBook</h1>
-
-        <Form onSubmit={this.formSubmitHandler} />
-        <Filter setFilter={this.setFilter} />
-        <ContactList
-          contacts={visibleContacts}
-          deleteContact={this.deleteContact}
-        />
+      <section className={css.phonebook}>
+        <div className={css.container}>
+          <h1>PhoneBook</h1>
+        </div>
+        <div className={css.container}>
+          <Form onSubmit={this.formSubmitHandler} />
+          <Filter setFilter={this.setFilter} />
+          <ContactList
+            contacts={visibleContacts}
+            deleteContact={this.deleteContact}
+          />
+        </div>
       </section>
     );
   }
