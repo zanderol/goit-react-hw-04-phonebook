@@ -18,6 +18,19 @@ class App extends Component {
     filter: '',
   };
 
+  componentDidMount() {
+    const saveContacts = localStorage.getItem('contacts');
+    if (saveContacts) {
+      this.setState({ contacts: JSON.parse(saveContacts) });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.contacts !== this.state.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
   formSubmitHandler = data => {
     const isExist = this.state.contacts.find(contact => {
       return contact.name === data.name;
